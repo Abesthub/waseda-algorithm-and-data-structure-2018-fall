@@ -1,1 +1,1 @@
-# waseda-algorithm-and-data-structure-2018-fall
+# 早稲田大学基幹理工学部アルゴリズムとデータ構造2018秋学期講義関連資料
