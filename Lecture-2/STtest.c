@@ -29,8 +29,6 @@ int main(int argc, char *argv[])
   printf("\n");
   printf("%d keys ", N);
   printf("%d distinct keys\n", STcount());
-  printf("Height: %d \n", Stheight());
-  printf("Internal path length: %d \n", Stipathlength());
-  printf("External path length: %d \n", Stepathlength());
+  STshowAll();
   return 0;
 }
