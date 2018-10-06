@@ -51,36 +51,40 @@ Item STsearch(Key v)
   return searchR(head, v);
 } 
 
-link rotR(link h)
+link rotR(link h)   // todo
 {
   link x = h->l;
   h->l = x->r;
-  x->r = h; 
+  x->r = h;
+  x->N = h->N;
   return x;
 }
 
-link rotL(link h)
+link rotL(link h)   // todo
 {
   link x = h->r;
   h->r = x->l;
-  x->l = h; 
+  x->l = h;
+  x->N = h->N;
   return x;
 }
 
-link insertT(link h, Item item)
+link insertT(link h, Item item)   // todo
 {
   Key v = key(item);
   if (h == z)
     return NEW(item, z, z, 1); 
   if (less(v, key(h->item))) 
   {
-    h->l = insertT(h->l, item); 
+    h->l = insertT(h->l, item);
     h = rotR(h);
+    (h->N)++;
   }
   else
   {
     h->r = insertT(h->r, item);
     h = rotL(h);
+    (h->N)++;
   }
   return h;
 }
