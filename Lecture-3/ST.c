@@ -145,7 +145,8 @@ link insertR(link h, Item item)
 
 void STinsert(Item item)
 {
-  head = insertT(head, item);
+  // 目的に応じてひとつのコメントを解除すること
+  // head = insertT(head, item);
   // head = splay(head, item);       // スプレー木
   // head = insertR(head, item);     // ランダム木
 }
