@@ -51,6 +51,11 @@ Item STsearch(Key v)
   return searchR(head, v);
 } 
 
+void STdelete(Item item)
+{
+  
+}
+
 link rotR(link h)
 {
   link x = h->l;

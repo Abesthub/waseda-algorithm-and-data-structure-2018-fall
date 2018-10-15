@@ -9,5 +9,3 @@ Friday, The Fourth Period
 ## Lecture-2 Oct.5
 
 ## Lecture-3 Oct.12
-
-In Edit

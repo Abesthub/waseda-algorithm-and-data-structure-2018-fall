@@ -20,7 +20,9 @@ int main(int argc, char *argv[])
         break;
     item = STsearch(v);
     if (item.key != NULLitem.key)
-      continue;
+      // 目的に応じてひとつのコメントを解除すること
+      STdelete(item);  // 既存ノードを削除
+      // continue;        // 既存ノードを放置
     key(item) = v;
     STinsert(item);
     M++;
