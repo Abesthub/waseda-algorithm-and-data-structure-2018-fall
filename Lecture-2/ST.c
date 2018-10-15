@@ -51,7 +51,7 @@ Item STsearch(Key v)
   return searchR(head, v);
 } 
 
-link rotR(link h)   // todo
+link rotR(link h)
 {
   link x = h->l;
   h->l = x->r;
@@ -60,7 +60,7 @@ link rotR(link h)   // todo
   return x;
 }
 
-link rotL(link h)   // todo
+link rotL(link h)
 {
   link x = h->r;
   h->r = x->l;
@@ -69,7 +69,7 @@ link rotL(link h)   // todo
   return x;
 }
 
-link insertT(link h, Item item)   // todo
+link insertT(link h, Item item)
 {
   Key v = key(item);
   if (h == z)

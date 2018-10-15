@@ -43,4 +43,3 @@ STinsert (Item item)
 {
   head = splay (head, item);
 }
-

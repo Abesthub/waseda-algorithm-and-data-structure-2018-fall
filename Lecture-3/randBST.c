@@ -20,4 +20,3 @@ STinsert (Item item)
 {
   head = insertR (head, item);
 }
-
