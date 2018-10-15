@@ -145,9 +145,9 @@ link insertR(link h, Item item)
 
 void STinsert(Item item)
 {
-  // head = insertT(head, item);
-  // head = splay(head, item);
-  head = insertR(head, item);
+  head = insertT(head, item);
+  // head = splay(head, item);       // スプレー木
+  // head = insertR(head, item);     // ランダム木
 }
 
 void sortR(link h, void (*visit)(Item))
