@@ -20,8 +20,6 @@ In Edit
 
 ### 1-1 絶対値 (Orientation 2016)
 
-In Edit
-
 ### 1-2 早稲田探し (Orientation 2015)
 
 In Edit
