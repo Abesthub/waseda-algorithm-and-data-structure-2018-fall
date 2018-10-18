@@ -21,23 +21,21 @@ int main()
             for(k = 2; k < m + 2; k++)
             {
                 scanf("%c", &block[j][k]);
+                if (block[j][k]==10)
+                    scanf("%c", &block[j][k]);
             }
         }
         for(j = 2; j < m + 2; j++)
         {
             for(k = 2; k < m + 2; k++)
             {
-                // up
-                if ((block[j][k]=="W")&&(block[j][k+1]=="S")&&(block[j][k+2]=="D"))
+                if ((block[j][k]=='W')&&(block[j][k+1]=='S')&&(block[j][k+2]=='D'))
                     ans++;
-                // down
-                if ((block[j][k]=="W")&&(block[j][k-1]=="S")&&(block[j][k-2]=="D"))
+                if ((block[j][k]=='W')&&(block[j][k-1]=='S')&&(block[j][k-2]=='D'))
                     ans++;
-                // left
-                if ((block[j][k]=="W")&&(block[j+1][k]=="S")&&(block[j+2][k]=="D"))
+                if ((block[j][k]=='W')&&(block[j+1][k]=='S')&&(block[j+2][k]=='D'))
                     ans++;
-                // right
-                if ((block[j][k]=="W")&&(block[j-1][k]=="S")&&(block[j-2][k]=="D"))
+                if ((block[j][k]=='W')&&(block[j-1][k]=='S')&&(block[j-2][k]=='D'))
                     ans++;
             }
         }
