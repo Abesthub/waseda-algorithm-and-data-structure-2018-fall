@@ -23,5 +23,3 @@ In Edit
 ### 1-2 早稲田探し (Orientation 2015)
 
 ### 1-3 階層民主主義 (ICPC2013 Aizu C)
-
-In Edit
