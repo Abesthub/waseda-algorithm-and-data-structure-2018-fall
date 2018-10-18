@@ -49,11 +49,6 @@ Item searchR(link h, Key v)
 Item STsearch(Key v) 
 {
   return searchR(head, v);
-} 
-
-void STdelete(Item item)
-{
-  
 }
 
 link rotR(link h)
@@ -79,6 +74,10 @@ link splay(link h, Item item)
   Key v = key(item);
   if (h == z)
     return NEW(item, z, z, 1);
+  if (v == h->item.key)
+  {
+    return h;
+  }
   if (less(v, key(h->item)))
   {
     if (h->l == z)

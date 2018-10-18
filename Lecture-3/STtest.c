@@ -18,11 +18,10 @@ int main(int argc, char *argv[])
     else 
       if (ITEMscan(&v) == EOF)
         break;
+    // 既存ノードの場合でも処理を進めたいばあいは以下３行をコメントアウトすること
     item = STsearch(v);
     if (item.key != NULLitem.key)
-      // 目的に応じてひとつのコメントを解除すること
-      STdelete(item);  // 既存ノードを削除
-      // continue;        // 既存ノードを放置
+      continue; 
     key(item) = v;
     STinsert(item);
     M++;

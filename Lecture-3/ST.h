@@ -6,3 +6,4 @@ void STdelete(Item);
 Item STselect(int);
 void STsort(void (*visit)(Item));
 void STshowAll(void);
+void Splay(Item);
