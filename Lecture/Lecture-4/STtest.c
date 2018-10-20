@@ -30,6 +30,6 @@ int main(int argc, char *argv[])
   printf("%d keys ", N);
   printf("%d distinct keys\n", STcount());
   // STshowAll();              // 木の様子を表示
-  STblackNodeCount();       // 黒い節点の数を表示
+  // STshowBlackNodeCount();   // 黒い節点の数を表示
   return 0;
 }

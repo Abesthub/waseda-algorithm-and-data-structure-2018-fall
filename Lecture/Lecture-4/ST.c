@@ -159,3 +159,21 @@ void STshowAll(void)
 {
   STshow(head, 0);
 }
+
+void showBlackNodeCount(link nowAt, int blackHaveBefore)
+{
+  if (!(key(nowAt->item)==-1))
+    if (nowAt->N==1)
+      printf("Leaf %d: \t%d\n", key(nowAt->item), blackHaveBefore + !nowAt->red);
+    else
+    {
+      showBlackNodeCount(nowAt->l, blackHaveBefore + !nowAt->red);
+      showBlackNodeCount(nowAt->r, blackHaveBefore + !nowAt->red);
+    }
+}
+
+void STshowBlackNodeCount(void)
+{
+  printf("From root to each leaf, there are(is) following black node(s) in the route:\n");
+  showBlackNodeCount(head, 0);
+}
