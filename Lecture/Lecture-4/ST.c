@@ -2,6 +2,13 @@
 #include <stdio.h>
 #include "Item.h"
 
+#define hl  h->l
+#define hr  h->r
+#define hll h->l->l
+#define hlr h->l->r
+#define hrl h->r->l
+#define hrr h->r->r
+
 typedef struct STnode* link;
 
 struct STnode
@@ -9,23 +16,25 @@ struct STnode
   Item item;
   link l, r;
   int N;
+  int red;
 };
 
 static link head, z;
 
-link NEW(Item item, link l, link r, int N)
+link NEW(Item item, link l, link r, int N, int red)
 {
-  link x = malloc(sizeof *x); 
+  link x = malloc(sizeof *x);
   x->item = item;
   x->l = l;
   x->r = r;
   x->N = N;
+  x->red = red;
   return x;
 }
 
-void STinit()
+void STinit ()
 {
-  head = (z = NEW(NULLitem, 0, 0, 0));
+  head = (z = NEW(NULLitem, 0, 0, 0, 0));
 }
 
 int STcount(void) 
@@ -36,14 +45,14 @@ int STcount(void)
 Item searchR(link h, Key v)
 {
   Key t = key(h->item);
-  if (h == z)
+  if (h==z)
     return NULLitem;
   if eq(v, t)
     return h->item;
   if less(v, t)
-    return searchR(h->l, v);
+    return searchR(hl, v);
   else
-    return searchR(h->r, v);
+    return searchR(hr, v);
 }
 
 Item STsearch(Key v) 
@@ -53,54 +62,79 @@ Item STsearch(Key v)
 
 link rotR(link h)
 {
-  link x = h->l;
-  h->l = x->r;
+  int tmp = hr->N + hlr->N + 1;
+  link x = hl;
+  hl = x->r;
   x->r = h;
-  //
+  x->N = h->N;
+  h->N = tmp;
   return x;
 }
 
 link rotL(link h)
 {
-  link x = h->r;
-  h->r = x->l;
+  int tmp = hl->N + hrl->N + 1;
+  link x = hr;
+  hr = x->l;
   x->l = h;
-  //
-  return x; 
+  x->N = h->N;
+  h->N = tmp;
+  return x;
 }
 
-link insertT(link h, Item item)
+link RBinsert(link h, Item item, int sw)
 {
   Key v = key(item);
-  if (h == z)
-    return NEW(item, z, z, 1); 
-  if (less(v, key(h->item))) 
+  if (h==z)
+    return NEW(item, z, z, 1, 1);
+  if ((hl->red)&&(hr->red))
   {
-    h->l = insertT(h->l, item);
-    h = rotR(h);
-    //
+    h->red = 1;
+    hl->red = 0;
+    hr->red = 0;
+  }
+  if (less(v, key (h->item)))
+  {
+    hl = RBinsert(hl, item, 0);
+    if (h->red && hl->red && sw)
+      h = rotR(h);
+    if (hl->red && hll->red)
+    {
+      h = rotR(h);
+	    h->red = 0;
+	    hr->red = 1;
+    }
+    (h->N)++;
   }
   else
   {
-    h->r = insertT(h->r, item);
-    h = rotL(h);
-    //
+    hr = RBinsert(hr, item, 1);
+    if (h->red && hr->red && !sw)
+      h = rotL(h);
+    if (hr->red && hrr->red)
+    {
+      h = rotL(h);
+      h->red = 0;
+      hl->red = 1;
+    }
+    (h->N)++;
   }
   return h;
 }
 
 void STinsert(Item item)
 {
-  head = insertT(head, item);
+  head = RBinsert (head, item, 0);
+  head->red = 0;
 }
 
 void sortR(link h, void (*visit)(Item))
 { 
-  if (h == z)
+  if (h==z)
     return;
-  sortR(h->l, visit);
+  sortR(hl, visit);
   visit(h->item); 
-  sortR(h->r, visit);
+  sortR(hr, visit);
 }
 
 void STsort(void (*visit)(Item))
@@ -113,11 +147,11 @@ void STshow(link h, int l)
   int i=0;
   if(h != NULL)
   {
-    STshow(h->r, l+1);
+    STshow(hr, l+1);
     for(i=0; i<l; i++)
       printf("\t");
     printf("(%d,%d)\n",key(h->item), h->N);
-    STshow(h->l, l+1);
+    STshow(hl, l+1);
   }
 }
 
