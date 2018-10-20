@@ -18,7 +18,6 @@ int main(int argc, char *argv[])
     else 
       if (ITEMscan(&v) == EOF)
         break;
-    // 既存ノードの場合でも処理を進めたいばあいは以下３行をコメントアウトすること
     item = STsearch(v);
     if (item.key != NULLitem.key)
       continue; 
@@ -30,6 +29,7 @@ int main(int argc, char *argv[])
   printf("\n");
   printf("%d keys ", N);
   printf("%d distinct keys\n", STcount());
-  STshowAll();
+  // STshowAll();              // 木の様子を表示
+  STblackNodeCount();       // 黒い節点の数を表示
   return 0;
 }
