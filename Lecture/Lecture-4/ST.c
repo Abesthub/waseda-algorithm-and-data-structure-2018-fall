@@ -58,29 +58,46 @@ link rotR(link h)
 }
 
 link rotL(link h)
-{ link x = h->r; h->r = x->l; x->l = h; 
-  return x; }
+{
+  link x = h->r;
+  h->r = x->l;
+  x->l = h; 
+  return x; 
+}
 
 link insertT(link h, Item item)
-{ Key v = key(item);
-  if (h == z) return NEW(item, z, z, 1); 
+{
+  Key v = key(item);
+  if (h == z)
+    return NEW(item, z, z, 1); 
   if (less(v, key(h->item))) 
-    { h->l = insertT(h->l, item); h = rotR(h); }
+  {
+    h->l = insertT(h->l, item);
+    h = rotR(h);
+  }
   else
-    { h->r = insertT(h->r, item); h = rotL(h); }
+  {
+    h->r = insertT(h->r, item);
+    h = rotL(h);
+  }
   return h;
 }
+
 void STinsert(Item item)
-{ head = insertT(head, item); }
-
-
+{
+  head = insertT(head, item);
+}
 
 void sortR(link h, void (*visit)(Item))
 { 
-  if (h == z) return;
+  if (h == z)
+    return;
   sortR(h->l, visit);
   visit(h->item); 
   sortR(h->r, visit);
 }
+
 void STsort(void (*visit)(Item))
-{ sortR(head, visit); } 
+{
+  sortR(head, visit);
+} 

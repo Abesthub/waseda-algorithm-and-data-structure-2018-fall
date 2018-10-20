@@ -16,6 +16,10 @@ Friday, The Fourth Period
 
 In Editing
 
+### Lecture-5 Oct.26
+
+Waiting For Lecture
+
 ## WOJ
 
 ### 1-1 絶対値 (Orientation 2016)
@@ -29,3 +33,23 @@ AC: 35.9% WA: 3%
 ### 1-3 階層民主主義 (ICPC2013 Aizu C)
 
 AC: 20.4% WA: 1.2%
+
+### 2-1 方角 (Orientation 2016)
+
+AC: WA:
+
+### 2-2 温度差に注意 (Orientation 2016)
+
+AC: WA:
+
+### 2-3 つながれた風船 (ICPC2013 Aizu E)
+
+AC: WA:
+
+### 3-1 n進数 (Orientation 2015)
+
+AC: WA:
+
+### 3-2 そして，いくつになった？ (ICPC2011 Kyusyu D)
+
+AC: WA:

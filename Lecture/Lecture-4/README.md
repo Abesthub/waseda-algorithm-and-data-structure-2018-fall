@@ -9,3 +9,11 @@
 ## 宿題内容
 
 ## ファイル構造
+
+- Item.c
+
+- ST.c
+
+- STtest.c
+
+    main関数
