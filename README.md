@@ -4,6 +4,8 @@ Dr. Edgar SIMO-SERRA
 
 Friday, The Fourth Period
 
+[Lecture Syllabus](https://www.wsl.waseda.jp/syllabus/JAA104.php?pKey=2603012012012018260301201226&pLng=jp)
+
 ## Lecture
 
 ### Lecture-1 Sep.28
