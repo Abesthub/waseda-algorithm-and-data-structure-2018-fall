@@ -1,9 +1,11 @@
 #include <stdlib.h>
+#include <stdio.h>
 #include "Item.h"
 
 typedef struct STnode* link;
 
-struct STnode {
+struct STnode
+{
   Item item;
   link l, r;
   int N;
@@ -53,7 +55,8 @@ link rotR(link h)
 {
   link x = h->l;
   h->l = x->r;
-  x->r = h; 
+  x->r = h;
+  //
   return x;
 }
 
@@ -61,7 +64,8 @@ link rotL(link h)
 {
   link x = h->r;
   h->r = x->l;
-  x->l = h; 
+  x->l = h;
+  //
   return x; 
 }
 
@@ -74,11 +78,13 @@ link insertT(link h, Item item)
   {
     h->l = insertT(h->l, item);
     h = rotR(h);
+    //
   }
   else
   {
     h->r = insertT(h->r, item);
     h = rotL(h);
+    //
   }
   return h;
 }
@@ -100,4 +106,22 @@ void sortR(link h, void (*visit)(Item))
 void STsort(void (*visit)(Item))
 {
   sortR(head, visit);
-} 
+}
+
+void STshow(link h, int l)
+{
+  int i=0;
+  if(h != NULL)
+  {
+    STshow(h->r, l+1);
+    for(i=0; i<l; i++)
+      printf("\t");
+    printf("(%d,%d)\n",key(h->item), h->N);
+    STshow(h->l, l+1);
+  }
+}
+
+void STshowAll(void)
+{
+  STshow(head, 0);
+}
