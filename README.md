@@ -50,6 +50,8 @@ AC: WA:
 
 ### 2-2 温度差に注意 (Orientation 2016)
 
+ソート
+
 AC: WA:
 
 ### 2-3 つながれた風船 (ICPC2013 Aizu E)
