@@ -44,6 +44,8 @@ AC: 20.4% WA: 1.2%
 
 ### 2-1 方角 (Orientation 2016)
 
+模擬
+
 AC: WA:
 
 ### 2-2 温度差に注意 (Orientation 2016)
