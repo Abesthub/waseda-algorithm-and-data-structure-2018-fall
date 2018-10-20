@@ -53,19 +53,23 @@ Item STsearch(Key v)
 
 link rotR(link h)
 {
+  int tmp = h->r->N + h->l->r->N + 1;
   link x = h->l;
   h->l = x->r;
   x->r = h;
   x->N = h->N;
+  h->N = tmp;
   return x;
 }
 
 link rotL(link h)
 {
+  int tmp = h->l->N + h->r->l->N + 1;
   link x = h->r;
   h->r = x->l;
   x->l = h;
   x->N = h->N;
+  h->N = tmp;
   return x;
 }
 
