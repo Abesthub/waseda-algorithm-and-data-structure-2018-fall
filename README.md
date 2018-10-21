@@ -56,6 +56,8 @@ AC: WA:
 
 ### 2-3 つながれた風船 (ICPC2013 Aizu E)
 
+二分探索、平面幾何
+
 AC: WA:
 
 ### 3-1 n進数 (Orientation 2015)
