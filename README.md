@@ -20,7 +20,7 @@ In Editing
 
 ### Lecture-5 Oct.26
 
-Waiting For Lecture
+In Editing
 
 ## WOJ
 
@@ -28,13 +28,13 @@ Waiting For Lecture
 
 模擬
 
-AC: 47.3% WA: 0%
+AC: 47.3% WA: 0.0%
 
 ### 1-2 早稲田探し (Orientation 2015)
 
 模擬
 
-AC: 35.9% WA: 3%
+AC: 35.9% WA: 3.0%
 
 ### 1-3 階層民主主義 (ICPC2013 Aizu C)
 
@@ -46,19 +46,19 @@ AC: 20.4% WA: 1.2%
 
 模擬
 
-AC: WA:
+AC: 41.3% WA: 1.2%
 
 ### 2-2 温度差に注意 (Orientation 2016)
 
 ソート
 
-AC: WA:
+AC: 38.3% WA: 0.6%
 
 ### 2-3 つながれた風船 (ICPC2013 Aizu E)
 
 二分探索、平面幾何
 
-AC: WA:
+AC: 12.0% WA: 4.2%
 
 ### 3-1 n進数 (Orientation 2015)
 
