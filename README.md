@@ -16,11 +16,13 @@ Friday, The Fourth Period
 
 ### Lecture-4 Oct.19
 
-In Editing
-
 ### Lecture-5 Oct.26
 
 In Editing
+
+### Lecture-6 Nov.9
+
+Waiting For Lecture
 
 ## WOJ
 
