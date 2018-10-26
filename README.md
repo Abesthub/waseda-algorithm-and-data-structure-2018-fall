@@ -60,9 +60,13 @@ AC: 38.3% WA: 0.6%
 
 二分探索、平面幾何
 
+In Editing
+
 AC: 12.0% WA: 4.2%
 
 ### 3-1 n進数 (Orientation 2015)
+
+模擬
 
 AC: WA:
 
