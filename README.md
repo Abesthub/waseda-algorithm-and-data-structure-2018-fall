@@ -69,3 +69,35 @@ AC: WA:
 ### 3-2 そして，いくつになった？ (ICPC2011 Kyusyu D)
 
 AC: WA:
+
+### 4-1 オリンピアード (Orientation 2016)
+
+AC: WA:
+
+### 4-2 とかげ算 (Orientation 2015)
+
+AC: WA:
+
+### 4-3 同色パネル結合 (ICPC2011 Kyusyu C)
+
+AC: WA:
+
+### 5-1 成績判定 (Orientation 2015)
+
+AC: WA:
+
+### 5-2 タイプライター (Orientation 2016)
+
+AC: WA:
+
+### 5-3 鉄道乗り継ぎ (ICPC2012 Tokyo D)
+
+AC: WA:
+
+### 6-1 素数にわけろ (Orientation 2016)
+
+AC: WA:
+
+### 6-2 素数洞穴 (ICPC2013 Aizu D)
+
+AC: WA:
