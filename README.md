@@ -68,11 +68,13 @@ AC: 12.0% WA: 4.2%
 
 模擬
 
-AC: WA:
+AC: 34.1% WA: 1.8%
 
 ### 3-2 そして，いくつになった？ (ICPC2011 Kyusyu D)
 
-AC: WA:
+In Editing
+
+AC: 5.4% WA: 4.2%
 
 ### 4-1 オリンピアード (Orientation 2016)
 
