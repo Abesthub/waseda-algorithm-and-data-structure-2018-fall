@@ -22,6 +22,10 @@ In Editing
 
 ### Lecture-6 Nov.9
 
+In Editing
+
+### Lecture-7 Nov.16
+
 Waiting For Lecture
 
 ## WOJ
