@@ -98,7 +98,9 @@ AC: WA:
 
 ### 5-1 成績判定 (Orientation 2015)
 
-AC: WA:
+模擬
+
+AC: 16.8% WA: 2.4%
 
 ### 5-2 タイプライター (Orientation 2016)
 
