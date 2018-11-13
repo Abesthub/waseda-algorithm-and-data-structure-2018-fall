@@ -82,7 +82,9 @@ AC: 5.4% WA: 4.2%
 
 ### 4-1 オリンピアード (Orientation 2016)
 
-AC: WA:
+模擬
+
+AC: 29.9% WA: 0.6%
 
 ### 4-2 とかげ算 (Orientation 2015)
 

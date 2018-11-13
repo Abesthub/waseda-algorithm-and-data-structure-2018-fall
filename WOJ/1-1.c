@@ -7,7 +7,6 @@ int main()
     scanf("%d", &n);
     for(i = 0; i < n; i++)
     {
-        
         int num[3], min = 10000000, j, k;
         scanf("%d %d %d", &num[0], &num[1], &num[2]);
         for(j = 0; j < 2; j++)
