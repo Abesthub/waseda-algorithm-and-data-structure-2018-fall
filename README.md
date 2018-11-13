@@ -34,31 +34,31 @@ Waiting For Lecture
 
 模擬
 
-AC: 47.3% WA: 0.0%
+AC: 46.1% WA: 0.0%
 
 ### 1-2 早稲田探し (Orientation 2015)
 
 模擬
 
-AC: 35.9% WA: 3.0%
+AC: 38.9% WA: 3.6%
 
 ### 1-3 階層民主主義 (ICPC2013 Aizu C)
 
 DP
 
-AC: 20.4% WA: 1.2%
+AC: 22.2% WA: 1.2%
 
 ### 2-1 方角 (Orientation 2016)
 
 模擬
 
-AC: 41.3% WA: 1.2%
+AC: 43.1% WA: 1.2%
 
 ### 2-2 温度差に注意 (Orientation 2016)
 
 ソート
 
-AC: 38.3% WA: 0.6%
+AC: 40.1% WA: 0.6%
 
 ### 2-3 つながれた風船 (ICPC2013 Aizu E)
 
@@ -66,19 +66,19 @@ AC: 38.3% WA: 0.6%
 
 In Editing
 
-AC: 12.0% WA: 4.2%
+AC: 12.0% WA: 6.0%
 
 ### 3-1 n進数 (Orientation 2015)
 
 模擬
 
-AC: 34.1% WA: 1.8%
+AC: 34.7% WA: 2.4%
 
 ### 3-2 そして，いくつになった？ (ICPC2011 Kyusyu D)
 
 In Editing
 
-AC: 5.4% WA: 4.2%
+AC: 5.4% WA: 6.6%
 
 ### 4-1 オリンピアード (Orientation 2016)
 
