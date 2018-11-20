@@ -108,12 +108,14 @@ AC: 12.6% WA: 3.6%
 
 ### 5-3 鉄道乗り継ぎ (ICPC2012 Tokyo D)
 
-AC: WA:
+AC: 3.6% WA: 1.2%
 
 ### 6-1 素数にわけろ (Orientation 2016)
 
-AC: WA:
+エラトステネスの篩
+
+AC: 21.0% WA: 1.8%
 
 ### 6-2 素数洞穴 (ICPC2013 Aizu D)
 
-AC: WA:
+AC: 5.4% WA: 0%
