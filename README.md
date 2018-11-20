@@ -76,9 +76,7 @@ AC: 34.7% WA: 2.4%
 
 ### 3-2 そして，いくつになった？ (ICPC2011 Kyusyu D)
 
-In Editing
-
-AC: 5.4% WA: 6.6%
+AC: 6% WA: 6.6%
 
 ### 4-1 オリンピアード (Orientation 2016)
 
