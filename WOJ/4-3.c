@@ -12,7 +12,7 @@ int changeColor(int bfr[10][10], int panel[10][10], int color, int x, int y)
     return cnt;
 }
 
-void dfs(int time, int color, int bfr[10][10])
+int dfs(int time, int color, int bfr[10][10])
 {
     int panel[10][10], i, j, cnt = 0;
     for(i = 0; i < 10; i++)
@@ -38,6 +38,7 @@ void dfs(int time, int color, int bfr[10][10])
         if (max < cnt)
             max = cnt;
     }
+    return 0;
 }
 
 int main()
