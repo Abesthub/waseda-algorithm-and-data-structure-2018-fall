@@ -1,5 +1,7 @@
 # 早稲田大学基幹理工学部アルゴリズムとデータ構造2018秋学期講義関連資料
 
+![License](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Cc-by-nc-nd_icon.svg/1920px-Cc-by-nc-nd_icon.svg.png)
+
 Dr. Edgar SIMO-SERRA
 
 Friday, The Fourth Period
